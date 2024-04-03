@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1e2123, #2c3e50); /* Gradient background */
+            color: #fff; /* Text color */
+            background-image : url("https://tse1.mm.bing.net/th?id=OIP.CpCpWO8G38SI9FuCi51G8QHaE8&pid=Api&P=0&h=180");
+            background-repeat : no-repeat;
+            background-attachment : fixed;
+            background-size : 100% 100%;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 60px;
+            background-color: rgba(128,128,128, 0.6); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        input[type="file"] {
+            display: block;
+            margin: 0 auto 20px;
+            padding: 50px;
+            border: 6px solid #ccc;
+            border-radius: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            background-color: black;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>OPTICAL CHARACTER RECOGNITION</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
